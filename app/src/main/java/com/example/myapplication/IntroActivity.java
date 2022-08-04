@@ -10,8 +10,8 @@ import android.widget.Button;
 import com.example.myapplication.ui.login.LoginActivity;
 
 public class IntroActivity extends AppCompatActivity {
-private Button btnStart;
-private Button btnLogin;
+    private Button btnStart;
+   // private Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +22,13 @@ private Button btnLogin;
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+                startActivity(new Intent(IntroActivity.this, MainActivity.class));
             }
         });
 
-        btnLogin=findViewById(R.id.btn_intro_login);
-        btnLogin.setOnClickListener(view -> {
-            startActivity(new Intent(IntroActivity.this, LoginActivity.class));
-        });
+        //btnLogin=findViewById(R.id.btn_intro_login);
+       // btnLogin.setOnClickListener(view -> {
+        //    startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+       // });
     }
 }
